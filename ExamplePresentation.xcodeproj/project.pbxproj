@@ -8,18 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		40AE9D5C2A69AA1D005C8157 /* ExamplePresentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D5B2A69AA1D005C8157 /* ExamplePresentationApp.swift */; };
-		40AE9D5E2A69AA1D005C8157 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D5D2A69AA1D005C8157 /* ContentView.swift */; };
 		40AE9D602A69AA1E005C8157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AE9D5F2A69AA1E005C8157 /* Assets.xcassets */; };
 		40AE9D632A69AA1E005C8157 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AE9D622A69AA1E005C8157 /* Preview Assets.xcassets */; };
+		40AE9D6C2A69AA34005C8157 /* PresentationKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40AE9D6B2A69AA34005C8157 /* PresentationKit */; };
+		40AE9D6E2A69AA5E005C8157 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D6D2A69AA5E005C8157 /* Title.swift */; };
+		40AE9D712A69AB8C005C8157 /* MultiFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D702A69AB8C005C8157 /* MultiFrame.swift */; };
+		40AE9D732A69AF5C005C8157 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D722A69AF5C005C8157 /* Videos.swift */; };
+		40AE9D752A69CDE9005C8157 /* End.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D742A69CDE9005C8157 /* End.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40AE9D582A69AA1D005C8157 /* ExamplePresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamplePresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AE9D5B2A69AA1D005C8157 /* ExamplePresentationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresentationApp.swift; sourceTree = "<group>"; };
-		40AE9D5D2A69AA1D005C8157 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40AE9D5F2A69AA1E005C8157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40AE9D622A69AA1E005C8157 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		40AE9D642A69AA1E005C8157 /* ExamplePresentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExamplePresentation.entitlements; sourceTree = "<group>"; };
+		40AE9D6D2A69AA5E005C8157 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		40AE9D702A69AB8C005C8157 /* MultiFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiFrame.swift; sourceTree = "<group>"; };
+		40AE9D722A69AF5C005C8157 /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
+		40AE9D742A69CDE9005C8157 /* End.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = End.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AE9D6C2A69AA34005C8157 /* PresentationKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				40AE9D5B2A69AA1D005C8157 /* ExamplePresentationApp.swift */,
-				40AE9D5D2A69AA1D005C8157 /* ContentView.swift */,
+				40AE9D6F2A69AA7A005C8157 /* Slides */,
 				40AE9D5F2A69AA1E005C8157 /* Assets.xcassets */,
 				40AE9D642A69AA1E005C8157 /* ExamplePresentation.entitlements */,
 				40AE9D612A69AA1E005C8157 /* Preview Content */,
@@ -67,6 +75,17 @@
 				40AE9D622A69AA1E005C8157 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40AE9D6F2A69AA7A005C8157 /* Slides */ = {
+			isa = PBXGroup;
+			children = (
+				40AE9D6D2A69AA5E005C8157 /* Title.swift */,
+				40AE9D702A69AB8C005C8157 /* MultiFrame.swift */,
+				40AE9D722A69AF5C005C8157 /* Videos.swift */,
+				40AE9D742A69CDE9005C8157 /* End.swift */,
+			);
+			path = Slides;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +104,9 @@
 			dependencies = (
 			);
 			name = ExamplePresentation;
+			packageProductDependencies = (
+				40AE9D6B2A69AA34005C8157 /* PresentationKit */,
+			);
 			productName = ExamplePresentation;
 			productReference = 40AE9D582A69AA1D005C8157 /* ExamplePresentation.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 40AE9D4F2A69AA1D005C8157;
+			packageReferences = (
+				40AE9D6A2A69AA33005C8157 /* XCRemoteSwiftPackageReference "PresentationKit" */,
+			);
 			productRefGroup = 40AE9D592A69AA1D005C8157 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40AE9D5E2A69AA1D005C8157 /* ContentView.swift in Sources */,
+				40AE9D752A69CDE9005C8157 /* End.swift in Sources */,
+				40AE9D712A69AB8C005C8157 /* MultiFrame.swift in Sources */,
+				40AE9D732A69AF5C005C8157 /* Videos.swift in Sources */,
+				40AE9D6E2A69AA5E005C8157 /* Title.swift in Sources */,
 				40AE9D5C2A69AA1D005C8157 /* ExamplePresentationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40AE9D6A2A69AA33005C8157 /* XCRemoteSwiftPackageReference "PresentationKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AdinAck/PresentationKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40AE9D6B2A69AA34005C8157 /* PresentationKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40AE9D6A2A69AA33005C8157 /* XCRemoteSwiftPackageReference "PresentationKit" */;
+			productName = PresentationKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40AE9D502A69AA1D005C8157 /* Project object */;
 }

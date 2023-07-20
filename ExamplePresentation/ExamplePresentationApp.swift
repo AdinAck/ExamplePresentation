@@ -6,12 +6,36 @@
 //
 
 import SwiftUI
+import PresentationKit
 
 @main
 struct ExamplePresentationApp: App {
+    @StateObject var model = Presentation(bgColor: .white, slides: [
+        Title(),
+        MultiFrame(),
+        Videos(),
+        End()
+    ])
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PresentationView()
+                .environmentObject(model)
+        }
+        .commands {
+            CommandMenu("Control") {
+                Text("Current frame: \(Int(model.keyframe))")
+                
+                Button("Next Keyframe") {
+                    model.nextKeyframe()
+                }
+                .keyboardShortcut("N")
+                
+                Button("Previous Keyframe") {
+                    model.prevKeyFrame()
+                }
+                .keyboardShortcut("B")
+            }
         }
     }
 }
