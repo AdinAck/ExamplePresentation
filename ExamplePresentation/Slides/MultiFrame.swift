@@ -12,7 +12,11 @@ import PresentationKit
 class MultiFrame: SlideModel {
     let name: String = "Multiple Frames"
     let duration: CGFloat = 4
-    let transition: Transition = .slide
+    let transition: PresentationKit.Transition = .slide
+    var teleprompt: [String]? = [
+        "This is the teleprompter.",
+        "You can use it to display notes for the current slide."
+    ]
     
     func view(t: CGFloat, scale: CGFloat) -> AnyView {
         AnyView(

@@ -12,7 +12,8 @@ import PresentationKit
 class End: SlideModel {
     let name: String = "End"
     let duration: CGFloat = 1
-    let transition: Transition = .slide
+    let transition: PresentationKit.Transition = .slide
+    var teleprompt: [String]? = nil
     
     func view(t: CGFloat, scale: CGFloat) -> AnyView {
         AnyView(

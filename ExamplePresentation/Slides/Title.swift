@@ -12,7 +12,8 @@ import PresentationKit
 class Title: SlideModel {
     let name: String = "Title"
     let duration: CGFloat = 2
-    let transition: Transition = .slide
+    let transition: PresentationKit.Transition = .slide
+    let teleprompt: [String]? = ["...", "Introduce yourself!"]
     
     func view(t: CGFloat, scale: CGFloat) -> AnyView {
         AnyView(

@@ -13,7 +13,10 @@ import AVKit
 class Videos: SlideModel {
     let name: String = "Videos"
     let duration: CGFloat = 3
-    let transition: Transition = .fade
+    let transition: PresentationKit.Transition = .fade
+    var teleprompt: [String]? = [
+        "The timeline controls are always present at the bottom."
+    ]
     
     func view(t: CGFloat, scale: CGFloat) -> AnyView {
         AnyView(
@@ -66,7 +69,7 @@ struct VideosView: SlideView {
                 self.player.play()
             }
         }
-        .onChange(of: t) { newValue in
+        .onChange(of: t) { _, newValue in
             if let player {
                 if newValue == 0 {
                     player.seek(to: .zero)

@@ -1,4 +1,5 @@
 {
+  "originHash" : "4f638ab2e2cfd3a15c0c024f7fa100cbbed639e6b20d77bd5ba19576ba565fe6",
   "pins" : [
     {
       "identity" : "presentationkit",
@@ -6,9 +7,9 @@
       "location" : "https://github.com/AdinAck/PresentationKit",
       "state" : {
         "branch" : "main",
-        "revision" : "c3d4883e92428540a2e4563d9c8438d25b61da24"
+        "revision" : "7d13d44aa63898670faaad032e0d6f97ae8046ff"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

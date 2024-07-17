@@ -10,11 +10,11 @@
 		40AE9D5C2A69AA1D005C8157 /* ExamplePresentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D5B2A69AA1D005C8157 /* ExamplePresentationApp.swift */; };
 		40AE9D602A69AA1E005C8157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AE9D5F2A69AA1E005C8157 /* Assets.xcassets */; };
 		40AE9D632A69AA1E005C8157 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AE9D622A69AA1E005C8157 /* Preview Assets.xcassets */; };
-		40AE9D6C2A69AA34005C8157 /* PresentationKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40AE9D6B2A69AA34005C8157 /* PresentationKit */; };
 		40AE9D6E2A69AA5E005C8157 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D6D2A69AA5E005C8157 /* Title.swift */; };
 		40AE9D712A69AB8C005C8157 /* MultiFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D702A69AB8C005C8157 /* MultiFrame.swift */; };
 		40AE9D732A69AF5C005C8157 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D722A69AF5C005C8157 /* Videos.swift */; };
 		40AE9D752A69CDE9005C8157 /* End.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9D742A69CDE9005C8157 /* End.swift */; };
+		40E3FE7B2C483EDE00745D71 /* PresentationKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3FE7A2C483EDE00745D71 /* PresentationKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40AE9D6C2A69AA34005C8157 /* PresentationKit in Frameworks */,
+				40E3FE7B2C483EDE00745D71 /* PresentationKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 			);
 			name = ExamplePresentation;
 			packageProductDependencies = (
-				40AE9D6B2A69AA34005C8157 /* PresentationKit */,
+				40E3FE7A2C483EDE00745D71 /* PresentationKit */,
 			);
 			productName = ExamplePresentation;
 			productReference = 40AE9D582A69AA1D005C8157 /* ExamplePresentation.app */;
@@ -119,7 +119,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					40AE9D572A69AA1D005C8157 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -136,7 +136,7 @@
 			);
 			mainGroup = 40AE9D4F2A69AA1D005C8157;
 			packageReferences = (
-				40AE9D6A2A69AA33005C8157 /* XCRemoteSwiftPackageReference "PresentationKit" */,
+				40E3FE792C483EDE00745D71 /* XCRemoteSwiftPackageReference "PresentationKit" */,
 			);
 			productRefGroup = 40AE9D592A69AA1D005C8157 /* Products */;
 			projectDirPath = "";
@@ -208,9 +208,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -225,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,9 +270,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -279,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -297,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ExamplePresentation/Preview Content\"";
 				DEVELOPMENT_TEAM = 84WPVNZ8GM;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -324,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ExamplePresentation/Preview Content\"";
 				DEVELOPMENT_TEAM = 84WPVNZ8GM;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -366,7 +372,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		40AE9D6A2A69AA33005C8157 /* XCRemoteSwiftPackageReference "PresentationKit" */ = {
+		40E3FE792C483EDE00745D71 /* XCRemoteSwiftPackageReference "PresentationKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AdinAck/PresentationKit";
 			requirement = {
@@ -377,9 +383,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		40AE9D6B2A69AA34005C8157 /* PresentationKit */ = {
+		40E3FE7A2C483EDE00745D71 /* PresentationKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 40AE9D6A2A69AA33005C8157 /* XCRemoteSwiftPackageReference "PresentationKit" */;
+			package = 40E3FE792C483EDE00745D71 /* XCRemoteSwiftPackageReference "PresentationKit" */;
 			productName = PresentationKit;
 		};
 /* End XCSwiftPackageProductDependency section */
